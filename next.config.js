@@ -1,5 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Configuração para GitHub Pages
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  
   // Otimizações de performance
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
